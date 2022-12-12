@@ -1,0 +1,602 @@
+[
+  {
+    "id": 0,
+    "movieName": "Citizen Kane (1941)",
+    "movieOfTheWeek": true,
+    "alreadyPicked": false
+  },
+  {
+    "id": 1,
+    "movieName": "The Godfather (1972)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 2,
+    "movieName": "Casablanca (1942)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 3,
+    "movieName": "Raging Bull (1980)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 4,
+    "movieName": "Singin' in the Rain (1952)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 5,
+    "movieName": "Gone with the Wind (1939)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 6,
+    "movieName": "Lawrence of Arabia (1962)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 7,
+    "movieName": "Schindler's List (1993)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 8,
+    "movieName": "Vertigo (1958)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 9,
+    "movieName": "The Wizard of Oz (1939)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 10,
+    "movieName": "City Lights (1931)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 11,
+    "movieName": "The Searchers (1956)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 12,
+    "movieName": "Star Wars (1977)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 13,
+    "movieName": "Psycho (1960)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 14,
+    "movieName": "2001: A Space Odyssey (1968)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 15,
+    "movieName": "Sunset Blvd. (1950)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 16,
+    "movieName": "The Graduate (1967)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 17,
+    "movieName": "The General (1926)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 18,
+    "movieName": "On the Waterfront (1954)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 19,
+    "movieName": "It's a Wonderful Life (1946)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 20,
+    "movieName": "Chinatown (1974)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 21,
+    "movieName": "Some Like It Hot (1959)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 22,
+    "movieName": "The Grapes of Wrath (1940)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 23,
+    "movieName": "E.T.: The Extra-Terrestrial (1982)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 24,
+    "movieName": "To Kill a Mockingbird (1962)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 25,
+    "movieName": "Mr. Smith Goes to Washington (1939)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 26,
+    "movieName": "High Noon (1952)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 27,
+    "movieName": "All About Eve (1950)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 28,
+    "movieName": "Double Indemnity (1944)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 29,
+    "movieName": "Apocalypse Now (1979)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 30,
+    "movieName": "The Maltese Falcon (1941)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 31,
+    "movieName": "The Godfather Part II (1974)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 32,
+    "movieName": "One Flew Over the Cuckoo's Nest (1975)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 33,
+    "movieName": "Snow White and the Seven Dwarfs (1937)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 34,
+    "movieName": "Annie Hall (1977)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 35,
+    "movieName": "The Bridge on the River Kwai (1957)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 36,
+    "movieName": "The Best Years of Our Lives (1946)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 37,
+    "movieName": "The Treasure of the Sierra Madre (1948)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 38,
+    "movieName": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the no (1964)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 39,
+    "movieName": "The Sound of Music (1965)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 40,
+    "movieName": "King Kong (1933)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 41,
+    "movieName": "Bonnie and Clyde (1967)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 42,
+    "movieName": "Midnight Cowboy (1969)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 43,
+    "movieName": "The Philadelphia Story (1940)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 44,
+    "movieName": "Shane (1953)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 45,
+    "movieName": "It Happened One Night (1934)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 46,
+    "movieName": "A Streetcar Named Desire (1951)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 47,
+    "movieName": "Rear Window (1954)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 48,
+    "movieName": "Intolerance (1916)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 49,
+    "movieName": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 50,
+    "movieName": "Titanic (1997)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 51,
+    "movieName": "Easy Rider (1969)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 52,
+    "movieName": "A Night at the Opera (1935)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 53,
+    "movieName": "Platoon (1986)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 54,
+    "movieName": "12 Angry Men (1957)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 55,
+    "movieName": "Bringing Up Baby (1938)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 56,
+    "movieName": "The Sixth Sense (1999)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 57,
+    "movieName": "Swing Time (1936)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 58,
+    "movieName": "Sophie's Choice (1982)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 59,
+    "movieName": "Goodfellas (1990)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 60,
+    "movieName": "The French Connection (1971)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 61,
+    "movieName": "Pulp Fiction (1994)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 62,
+    "movieName": "The Last Picture Show (1971)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 63,
+    "movieName": "Do the Right Thing (1989)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 64,
+    "movieName": "Blade Runner (1982)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 65,
+    "movieName": "Yankee Doodle Dandy (1942)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 66,
+    "movieName": "Toy Story (1995)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 67,
+    "movieName": "Ben-Hur (1959)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 68,
+    "movieName": "The African Queen (1951)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 69,
+    "movieName": "Raiders of the Lost Ark (1981)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 70,
+    "movieName": "Who's Afraid of Virginia Woolf? (1966)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 71,
+    "movieName": "Unforgiven (1992)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 72,
+    "movieName": "Tootsie (1982)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 73,
+    "movieName": "A Clockwork Orange (1971)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 74,
+    "movieName": "Saving Private Ryan (1998)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 75,
+    "movieName": "The Shawshank Redemption (1994)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 76,
+    "movieName": "Butch Cassidy and the Sundance Kid (1969)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 77,
+    "movieName": "The Silence of the Lambs (1991)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 78,
+    "movieName": "In the Heat of the Night (1967)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 79,
+    "movieName": "Forrest Gump (1994)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 80,
+    "movieName": "All the President's Men (1976)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 81,
+    "movieName": "Modern Times (1936)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 82,
+    "movieName": "The Wild Bunch (1969)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 83,
+    "movieName": "The Apartment (1960)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 84,
+    "movieName": "Spartacus (1960)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 85,
+    "movieName": "Sunrise: A Song of Two Humans (1927)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 86,
+    "movieName": "West Side Story (1961)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 87,
+    "movieName": "Taxi Driver (1976)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 88,
+    "movieName": "The Deer Hunter (1978)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 89,
+    "movieName": "M*A*S*H (1970)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 90,
+    "movieName": "North by Northwest (1959)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 91,
+    "movieName": "Jaws (1975)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 92,
+    "movieName": "Rocky (1976)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 93,
+    "movieName": "The Gold Rush (1925)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 94,
+    "movieName": "Nashville (1975)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 95,
+    "movieName": "Duck Soup (1933)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 96,
+    "movieName": "Sullivan's Travels (1941)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 97,
+    "movieName": "American Graffiti (1973)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 98,
+    "movieName": "Cabaret (1972)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  },
+  {
+    "id": 99,
+    "movieName": "Network (1976)",
+    "movieOfTheWeek": false,
+    "alreadyPicked": false
+  }
+]

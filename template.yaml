@@ -1,0 +1,138 @@
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  MovieAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: !Sub
+        - ${ResourceName} From Stack ${AWS::StackName}
+        - ResourceName: MovieAPI
+      StageName: Prod
+      DefinitionBody:
+        openapi: '3.0'
+        info: {}
+        paths:
+          /movie-of-the-week:
+            get:
+              x-amazon-apigateway-integration:
+                httpMethod: POST
+                type: aws_proxy
+                uri: !Sub arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${getMovieOfTheWeek.Arn}/invocations
+              responses: {}
+      EndpointConfiguration: REGIONAL
+      TracingEnabled: true
+  getMovieOfTheWeek:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: !Sub
+        - Stack ${AWS::StackName} Function ${ResourceName}
+        - ResourceName: getMovieOfTheWeek
+      CodeUri: src/getMovie
+      Handler: handler.handler
+      Runtime: python3.9
+      MemorySize: 3008
+      Timeout: 30
+      Tracing: Active
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref MoviesTable
+          TABLE_ARN: !GetAtt MoviesTable.Arn
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref MoviesTable
+      Events:
+        MovieAPIGETmovieoftheweek:
+          Type: Api
+          Properties:
+            Path: /movie-of-the-week
+            Method: GET
+            RestApiId: !Ref MovieAPI
+  getMovieOfTheWeekLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Retain
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${getMovieOfTheWeek}
+  MoviesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: 'N'
+      BillingMode: PAY_PER_REQUEST
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+  newMovieScheduler:
+    Type: AWS::Scheduler::Schedule
+    Properties:
+      ScheduleExpression: rate(7 days)
+      FlexibleTimeWindow:
+        Mode: 'OFF'
+      Target:
+        Arn: !GetAtt setMovieOfTheWeek.Arn
+        RoleArn: !GetAtt newMovieSchedulerTosetMovieOfTheWeekRole.Arn
+  setMovieOfTheWeek:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: !Sub
+        - Stack ${AWS::StackName} Function ${ResourceName}
+        - ResourceName: setMovieOfTheWeek
+      CodeUri: src/setMovie
+      Handler: handler.handler
+      Runtime: python3.9
+      MemorySize: 3008
+      Timeout: 30
+      Tracing: Active
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref MoviesTable
+          TABLE_ARN: !GetAtt MoviesTable.Arn
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref MoviesTable
+  setMovieOfTheWeekLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Retain
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${setMovieOfTheWeek}
+  newMovieSchedulerTosetMovieOfTheWeekRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: !Sub scheduler.${AWS::URLSuffix}
+          Action: sts:AssumeRole
+          Condition:
+            ArnLike:
+              aws:SourceArn: !Sub
+                - arn:${AWS::Partition}:scheduler:${AWS::Region}:${AWS::AccountId}:schedule/*/${AWS::StackName}-${ResourceId}-*
+                - ResourceId: newMovieScheduler
+      Policies:
+        - PolicyName: StartExecutionPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource: !GetAtt setMovieOfTheWeek.Arn
+  writeMovieData:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: !Sub
+        - Stack ${AWS::StackName} Function ${ResourceName}
+        - ResourceName: writeMovieData
+      CodeUri: src/writeData
+      Handler: handler.handler
+      Runtime: python3.9
+      MemorySize: 3008
+      Timeout: 30
+      Tracing: Active
+  writeMovieDataLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Retain
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${writeMovieData}
